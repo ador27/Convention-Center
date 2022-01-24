@@ -75,7 +75,7 @@
                             are in the right place here you can find all the Luxirous thing that you want for your
                             programme</small>
                         <br>
-                        <button type="button" class="btn btn-light mt-3 text-info">
+                        <button type="button" class="btn btn-info mt-3 text-white">
                             <a href="https://www.linkedin.com/in/rashedul-haque-ador-5b0b771a9/" target="_blank">Book
                                 Now</a></button>
                     </div>
@@ -123,12 +123,29 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
+
+        <!-- toast -->
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- main part -->
     <main>
         <!-- packages -->
         <section class="container">
+            <h1 class="package"><b>Our Packages</b></h1>
             <div class="row row-cols- row-cols-md-4 g-2">
                 <div class="col">
                     <div class="card h-100 rounded-3 mt-5">
@@ -183,11 +200,11 @@
                             Hot
                         </span>
 
-                        <div class="card-body shadow-lg bg-info text-white ">
+                        <div class="card-body shadow-lg bg-secondary text-white ">
 
                             <h2 class="card-price ms-3"><b>$800</b></h2>
                             <h2 class="card-title ms-3"><b>Wedding Plus</b></h2>
-                            <p class="card-text text-muted ms-3">For most wedding with premium plans</p>
+                            <p class="card-text ms-3">For most wedding with premium plans</p>
                             <ul class="list-unstyled ms-3">
 
                                 <i class="fas fa-check-circle"> Full space access</i> <br>
@@ -229,8 +246,30 @@
 
         </section>
 
+        <!-- why choose us -->
+        <div class="choose-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col backclr">
+                        <img src="images/choose.jpg" alt="">
+                    </div>
+                    <div class="col backclr">
+                        <h1><b>Why Choose Us</b></h1>
+                        <p>We are the KGF Convention Center team. We work hard a lot to make our client happy. We give
+                            the best option to our clietns so that they can enjoy here with thier own with unlimited
+                            enjoy. We provide anykind of thing that our customer want. We have a very good Secuirty
+                            system and we have a big parking system in our center. Here you will find all the facilities
+                            that you want or which is need is available here. That's why you can choose us wihtout any
+                            hesitation</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <!-- frequently asked questions -->\
-        <h1 class="py-5"><b>Frequently asked Questions</b></h1>
+        <h1 class="py-5 asked"><b>Frequently asked Questions</b></h1>
         <section class="container d-flex pb-5">
             <div class="accordion" id="accordionPanelsStayOpenExample">
                 <div class="accordion-item">
@@ -317,15 +356,10 @@
     <footer>
 
         <footer class="text-center text-lg-start text-white footer" style="background-color: #1c2331">
-
-
             <section class="">
                 <div class="container text-center text-md-start mt-5 mb-5">
-
                     <div class="row mt-3">
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-
                             <hr class="mb-5 mt-0 d-inline-block mx-auto"
                                 style="width: 60px; background-color: #7c4dff; height: 2px" />
                             <p>
@@ -335,16 +369,13 @@
 
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                             <h5>Get the App</h5>
-
                             <a href="https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?utm_source=chrome-ntp-icon"
                                 target="blank"><img class="w-50 " src="images/apple.png" alt=""></a>
                             <br><br>
                             <a href="https://chrome.google.com/webstore/detail/grammarly-for-chrome/kbfnbcaeplbcioakkpcpgfkobkghlhen?utm_source=chrome-ntp-icon"
                                 target="blank"><img class="w-50 " src="images/google.png" alt=""></a>
                         </div>
-
                     </div>
-
                 </div>
             </section>
         </footer>
@@ -354,6 +385,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+    <script>
+        var toastTrigger = document.getElementById('liveToastBtn')
+        var toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', function () {
+                var toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
 </body>
 
 </html>

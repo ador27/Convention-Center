@@ -15,17 +15,37 @@ font-family: 'Source Sans Pro', sans-serif;
 a{
     text-decoration: none;
 }
+/* package */
+.package{
+    margin-left: 45%;
+    margin-bottom: 3%;
+}
 
 /* frequently questions */
 .question{
-    padding-left: 40px;
+    padding-left: 40px !important;
 }
 .question img{
     height: 300px;
     width: 470px;
     padding-top: 20px;
 }
-
+.asked{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+/* extra part */
+.choose-us{
+    margin-top: 10%;
+}
+.backclr{
+    background-color: turquoise;
+}
+.col h1{
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 5%;
+}
 /* footer */
 .footer{
     padding-top: 5px;
