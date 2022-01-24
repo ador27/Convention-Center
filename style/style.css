@@ -6,10 +6,22 @@ font-family: 'Source Sans Pro', sans-serif;
     color: rgb(234, 250, 12) !important;
     text-transform: uppercase;
 }
+
+/* carousel */
 .carousel-caption{
     bottom: 250px;
     padding-left: 85px;
 }
 a{
     text-decoration: none;
+}
+
+/* frequently questions */
+.question{
+    padding-left: 40px;
+}
+.question img{
+    height: 300px;
+    width: 470px;
+    padding-top: 20px;
 }
